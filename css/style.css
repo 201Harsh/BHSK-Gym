@@ -72,6 +72,31 @@
 
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 3rem !important;
+    width: 20% !important;
+    transition: all 0.2s ease-in;
+}
+
+.carousel-control-next-icon:hover {
+    border: 2px solid white !important;
+    height: 5rem !important;
+    width: 25% !important;
+}
+
+.carousel-control-prev-icon:hover {
+    border: 2px solid white !important;
+    height: 4rem !important;
+    width: 20% !important;
+}
+
 .feature-icon {
     width: 4rem;
     height: 4rem;
@@ -107,8 +132,255 @@
     height: 3rem;
 }
 
+
+.pricing-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: 38px auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.pricing-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    color: #1096e4;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 3rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.price span {
+    font-size: 1rem;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btnns {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: background 0.3s ease-in;
+}
+
+.btnns:hover {
+    background: #1096e4;
+    color: white;
+}
+
+.recommended {
+    border: 2px solid #1096e4;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profileec {
+    background-color: #adadad;
+    padding: 20px;
+  }
+  
+  .profileec h1,
+  .profileec h6 {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  /* Main container styling */
+  .main {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Ensures spacing between cards */
+  }
+  
+  .profile-card {
+    position: relative;
+    font-family: sans-serif;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: 0.6s;
+    margin: 10px;
+  }
+  
+  .profile-card:hover {
+    border-radius: 10px;
+    height: 260px;
+  }
+  
+  .profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    z-index: 99;
+  }
+  
+  .profile-card:hover .img {
+    transform: translateY(-60px);
+  }
+  
+  .img img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: 0.6s;
+  }
+  
+  .profile-card:hover img {
+    border-radius: 10px;
+  }
+  
+  .caption {
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: 0.6s;
+  }
+  
+  .profile-card:hover .caption {
+    opacity: 1;
+  }
+  
+  .caption h3 {
+    font-size: 21px;
+    font-family: sans-serif;
+  }
+  
+  .caption p {
+    font-size: 15px;
+    color: #0c52a1;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+  }
+  
+  .caption .social-links a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 21px;
+    transition: 0.6s;
+  }
+  
+  .social-links a:hover {
+    color: #0c52a1;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .profile-card {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .profile-card:hover {
+      height: 220px;
+    }
+  
+    .caption h3 {
+      font-size: 18px;
+    }
+  
+    .caption p {
+      font-size: 13px;
+    }
+  
+    .social-links a {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main {
+      flex-direction: column;
+    }
+  
+    .profile-card {
+      width: 150px;
+      height: 150px;
+      padding: 20px;
+    }
+  
+    .profile-card:hover {
+      height: 200px;
+    }
+  
+    .img img {
+      border-radius: 20px;
+    }
+  
+    .caption h3 {
+      font-size: 16px;
+    }
+  
+    .caption p {
+      font-size: 12px;
+    }
+  
+    .social-links a {
+      font-size: 16px;
+    }
+  }
+  
+
+
+
+/* footer Section */
+
 .footer {
-    background-color: #222;
+    background: url('../img/footer_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     padding: 40px 0;
 }
@@ -192,7 +464,7 @@
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
-    background-color: #111;
+    background: transparent;
     margin-top: 20px;
 }
 
@@ -200,6 +472,19 @@
     margin: 0;
     font-size: 14px;
     color: #aaa;
+}
+
+.footer-bottom p a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.footer-bottom p a:hover {
+    color: #1096e4;
+}
+
+.footer-bottom p svg {
+    color: #1096e4; 
 }
 
 @media (max-width: 768px) {
